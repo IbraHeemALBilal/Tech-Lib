@@ -1,0 +1,8 @@
+USE [Tech-Lib];
+
+SELECT B.BookID , B.Title
+FROM Books AS B
+INNER JOIN Loans AS L
+ON B.BookID = L.BookID
+WHERE L.DateReturned IS NULL
+AND DATEDIFF(DAY,DueDate,GETDATE())>30;
