@@ -38,7 +38,6 @@ class Program
             "Biography",
             "Historical Fiction",
             "Adventure"
-            // Add more genres as needed
         };
             List<string> shelfLocations = new List<string>
         {
@@ -52,7 +51,6 @@ class Program
             "H2",
             "I1",
             "J4"
-            // Add more shelf locations as needed
         };
             var faker = new Bogus.Faker();
 
